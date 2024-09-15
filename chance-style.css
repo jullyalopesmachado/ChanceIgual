@@ -1,0 +1,408 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Georgia", serif;
+}
+
+body{
+    background-color: rgb(242, 247, 236);
+    font-family: "Georgia", serif;
+    overflow-x: hidden; /* This will prevent horizontal scrolling */    
+}
+button{
+    font-family: "Georgia", serif;
+}
+
+.description{
+    color:rgb(9, 9, 9);
+    font-size: 30px;
+    position: absolute;
+    top: 163%; 
+    left: 38%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sign-up-text{
+    color:rgb(30, 28, 28);
+    position: absolute;
+    top:310%;
+    left: 30%;
+    line-height: 40px;
+    font-size: 25px;
+    text-align: center;
+}
+.to-form{
+    background-color: rgb(39, 175, 24);
+    position: absolute;
+    top:132%;
+    left: 40%;
+    border: none;
+    height: 30px;
+    width: 120px;
+    border-radius: 15px; 
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.20s;
+    transition: width 0.1s;
+    font-weight: bold;
+
+}
+.to-form:hover{
+    background-color: rgba(53, 91, 20, .7);
+    width: 150px;
+
+}
+
+.contact:hover{
+    background-color: rgba(53, 91, 20, .7);
+    width: 150px;
+}
+.link-to-home, a{
+    transition: color 0.15s;
+    position: absolute;
+    left: 1%;
+    top: 0%;
+    bottom: 10%; 
+    margin-top: 0px;
+    object-fit: contain;
+    img{
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    top: 2%;
+    }
+}
+.link-to-home, a:hover{
+   color: rgb(201, 59, 201);
+   cursor: pointer;
+}
+
+.us-parag{
+    position: relative;
+    font-size: 40px;
+    margin-top: 30px;
+    top: 40%;
+    font-size: 25px;
+    left: -50%;
+    line-height: 50px;
+    text-align: center;
+    font-stretch: extra-expanded;
+    width: 1200px;
+}
+.main-title1{
+    position: absolute;
+    padding-left: 15px;
+    top: 32%;
+    left: 1%;
+    margin-top: 40px;
+    font-size: 40px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.85);
+    border-radius: 50px; 
+    transition: background-color 0.15s;   
+    animation-name: slideRight;
+    animation-duration: 1s;
+    } 
+    @keyframes slideRight {
+        from {transform: translateX(-200px)};
+    }
+    @keyframes slideLeft {
+        from {transform: translateX(200px)};
+    }
+
+.main-desc{
+    position: absolute;
+    padding-left: 15px;
+    top: 45%;
+    left: 1%;
+    margin-top: 60px;
+    font-size: 25px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.918);
+    border-radius: 50px; 
+    line-height: 40px;
+    transition: background-color 0.15s;
+    animation-name: slideRight;
+    animation-duration: 2s;
+}
+
+.my_logo{
+    position: absolute;
+    left: 49%;
+    top: 340%;
+}
+
+.down-info{
+    position: absolute;
+    left: 43%;
+    color:  rgb(242, 247, 236);
+    top: 355%;
+    font-weight: bold;
+
+}
+
+.box{
+    width: 1500px;
+    height: 175px;
+    background-color: hsl(127, 25%, 26%);
+    margin-top: 0;
+    margin-left: 0;
+    object-fit: contain;
+
+}
+.box2{
+    top: 25%;
+    position: absolute;
+    width: 1500px;
+    height: 25px;
+    background-color: rgb(242, 247, 236);
+    margin-top: -8px;
+    margin-left: -8px; 
+}
+.home {
+    background-color: hsl(127, 25%, 26%);
+    position: absolute;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    top: 5%;
+    left: 65%;
+    margin-top: -4px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.15s;
+    border-radius: 8%;
+    margin-right: 6px;
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+}
+
+.home:hover{
+    background-color: hsla(126, 26%, 35%, 0.681);
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.85);
+
+}
+
+.contactTop{
+    background-color: hsl(127, 25%, 26%);
+    position: absolute;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    top: 5%;
+    left: 73%;
+    margin-top: -4px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 6px;
+    transition: background-color 0.15s;
+    border-radius: 8%;
+    color: rgba(255, 255, 255, 0.85);
+}
+.contactTop:hover{
+    background-color: hsla(126, 26%, 35%, 0.681);
+    cursor: pointer;
+}
+
+.sign-up{
+    background-color: hsl(127, 25%, 26%);
+    position: absolute;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    top: 5%;
+    left: 82%;
+    margin-top: -4px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 6px;
+    transition: background-color 0.15s;
+    border-radius: 8%;
+    color: rgba(255, 255, 255, 0.85);
+}
+.sign-up:hover{
+    background-color: hsla(126, 26%, 35%, 0.681);
+    cursor: pointer;
+}
+
+.impact{
+    background-color: hsl(127, 25%, 26%);
+    position: absolute;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    top: 5%;
+    left: 91%;
+    margin-top: -4px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.15s;
+    border-radius: 8%;
+    color: rgba(255, 255, 255, 0.85);
+}
+.impact:hover{
+    background-color: hsla(126, 26%, 35%, 0.681);
+    cursor: pointer;
+}
+
+.full-text{
+    left: 48%;
+    position: absolute;
+    top: 120%;
+}
+.box3{
+
+    margin-left: -2%;
+}
+
+.more{
+    position: absolute;
+    padding-left: 5px;
+    top: 105%;
+    left: 45%;
+    margin-top: 60px;
+    font-size: 35px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: bold;
+    border-radius: 50px; 
+    line-height: 40px;
+    transition: background-color 0.15s;
+}
+.bottom-box{
+    width: 1500px;
+    height: 50px;
+    background-color: hsl(127, 25%, 26%);
+    margin-top: -8px;
+    margin-left: -8px;
+    top: 200%;
+}
+
+.last-box{
+    position: absolute;
+    width: 1500px;
+    height: 200px;
+    background-color: hsl(127, 25%, 26%);
+    margin-top: -8px;
+    margin-left: -8px;
+    top: 335%;
+  
+}
+
+.last-box hr{
+    border: none;
+    width: 1500px;
+    height: 30px;
+    position: absolute;
+    top: 0%;
+    background-color:hsl(125, 24%, 18%);
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+/* Sign up form stuff */
+.contact-container{
+    position: absolute;
+    top: 240%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-left{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+.contact-left-title{
+    font-weight: 500;
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.sign{
+    position: absolute;
+    left: 20%;
+    margin-bottom: 30px;
+}
+
+
+.contact-left-title hr{
+    border: none;
+    width: 1500px;
+    height: 15px;
+    background-color: hsl(127, 25%, 26%);
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs{
+
+    width: 400px;   
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: black;
+    border-radius: 10px;
+}
+
+.contact-left textarea{
+
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+.contact-inputs:focus{
+    border: 2px solid hsl(127, 25%, 26%);
+}
+.contact-inputs::placeholder{
+    color: hsl(127, 25%, 26%);
+}
+
+.contact-left button{
+    
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    font-size: 20px;
+    color: rgb(242, 247, 236);
+    gap: 10px;
+    border: none;
+    border-radius: 10%;
+    background: linear-gradient(270deg, hsl(127, 25%, 26%),hsl(126, 26%, 50%) ); /*very cool *-* */
+    cursor: pointer;
+
+}
+.contact-left button img{
+    height: 15px; /* changing size of arrow img for button */
+}
+
+@media (max-width:800px){ /* for risizing */
+    .contact-inputs{
+        width: 80vw;
+}
+
+
+}
+
