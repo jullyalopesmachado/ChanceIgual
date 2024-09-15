@@ -1,445 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> <!-- stuff that wont show in page go in head
+            object-fit: contain; makes ing shrink to fit-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChanceIgual</title>
+    <link rel ="stylesheet" href = "style/chance-style.css">
 </head>
 
-<script>
-</script>
-
-<style>
-body{
-    background-color: rgb(242, 247, 236);
-    font-family: "Georgia", serif;
-}
-button{
-    font-family: "Georgia", serif;
-}
-.description{
-    color:rgb(9, 9, 9);
-    font-size: 25px;
-    position: absolute;
-    top: 37%; 
-    left: 15%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.description:hover{
-    color: rgb(3, 116, 58)
-}
-.sign-up-text{
-    color:rgb(30, 28, 28);
-    position: absolute;
-    top:125%;
-    left: 42%;
-}
-.to-form{
-    background-color: rgb(39, 175, 24);
-    position: absolute;
-    top:132%;
-    left: 40%;
-    border: none;
-    height: 30px;
-    width: 120px;
-    border-radius: 15px; 
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.20s;
-    transition: width 0.1s;
-    font-weight: bold;
-
-}
-.to-form:hover{
-    background-color: rgba(53, 91, 20, .7);
-    width: 150px;
-
-}
-.contact{
-    background-color: rgb(39, 175, 24);
-    position: absolute;
-    top:132%;
-    left: 52%;
-    border: none;
-    height: 30px;
-    width: 120px;
-    border-radius: 15px; 
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.15s;
-    transition: width 0.1s;
-    border: none;
-    font-weight: bold;
-
-}
-.contact:hover{
-    background-color: rgba(53, 91, 20, .7);
-    width: 150px;
-}
-.link-to-home, a{
-    transition: color 0.15s;
-    position: absolute;
-    left: 1%;
-    top: 0%;
-    bottom: 10%; 
-    margin-top: 0px;
-}
-.link-to-home, a:hover{
-   color: rgb(201, 59, 201);
-   cursor: pointer;
-}
-
-.about-us{ 
-    font-size: 30px;
-    color:rgb(0, 0, 0);
-    left: 48%;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    margin-right: 30px;
-    position: absolute;
-    top: 25%;   
-}
-.us-parag{
-    position: absolute;
-    font-size: 40px;
-    margin-top: 30px;
-    top: 45%;
-    font-size: 20px;
-    left: 15%;
-    padding-right: 10%;
-    line-height: 40px;
-    text-align: center;
-}
-.main-title1{
-    position: absolute;
-    padding-left: 15px;
-
-    top: 20%;
-    left: 1%;
-    margin-top: 40px;
-    font-size: 35px;
-    text-align: left;
-    color: rgba(255, 255, 255, 0.85);
-    border-radius: 50px; 
-    transition: background-color 0.15s;   
-    animation-name: slideRight;
-    animation-duration: 1s;
-    } 
-    @keyframes slideRight {
-        from {transform: translateX(-200px)};
-    }
-    @keyframes slideLeft {
-        from {transform: translateX(200px)};
-    }
-
-.main-desc{
-    position: absolute;
-    padding-left: 15px;
-    top: 30%;
-    left: 1%;
-    margin-top: 60px;
-    font-size: 20px;
-    text-align: left;
-    color: rgba(255, 255, 255, 0.918);
-    border-radius: 50px; 
-    line-height: 40px;
-    transition: background-color 0.15s;
-    animation-name: slideRight;
-    animation-duration: 2s;
-}
-
-.my_logo{
-    position: absolute;
-    left: 47%;
-    top: 110%;
-    opacity: 10;
-}
-
-.box{
-    width: 1500px;
-    height: 100px;
-    background-color: hsl(127, 25%, 26%);
-    margin-top: -8px;
-    margin-left: -8px;
-
-}
-.box2{
-    top: 14%;
-    position: absolute;
-    width: 1500px;
-    height: 35px;
-    background-color: rgb(255, 255, 255);
-    margin-top: -8px;
-    margin-left: -8px; 
-}
-.home {
-    background-color: hsl(127, 25%, 26%);
-    position: absolute;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-    top: 1%;
-    left: 70%;
-    margin-top: -4px;
-    border: none;
-    font-size: 15px;
-    font-weight: bold;
-    transition: background-color 0.15s;
-    border-radius: 8%;
-    margin-right: 6px;
-    color: rgba(255, 255, 255, 0.85);
-    text-decoration: none;
-}
-
-.home:hover{
-    background-color: hsla(126, 26%, 35%, 0.681);
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.85);
-
-}
-
-.contactTop{
-    background-color: hsl(127, 25%, 26%);
-    position: absolute;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-    top: 1%;
-    left: 76%;
-    margin-top: -4px;
-    border: none;
-    font-size: 15px;
-    font-weight: bold;
-    margin-right: 6px;
-    transition: background-color 0.15s;
-    border-radius: 8%;
-    color: rgba(255, 255, 255, 0.85);
-}
-.contactTop:hover{
-    background-color: hsla(126, 26%, 35%, 0.681);
-    cursor: pointer;
-}
-
-.sign-up{
-    background-color: hsl(127, 25%, 26%);
-    position: absolute;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-    top: 1%;
-    left: 83%;
-    margin-top: -4px;
-    border: none;
-    font-size: 15px;
-    font-weight: bold;
-    margin-right: 6px;
-    transition: background-color 0.15s;
-    border-radius: 8%;
-    color: rgba(255, 255, 255, 0.85);
-}
-.sign-up:hover{
-    background-color: hsla(126, 26%, 35%, 0.681);
-    cursor: pointer;
-}
-
-.impact{
-    background-color: hsl(127, 25%, 26%);
-    position: absolute;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-    text-align: center;
-    top: 1%;
-    left: 90%;
-    margin-top: -4px;
-    border: none;
-    font-size: 15px;
-    font-weight: bold;
-    transition: background-color 0.15s;
-    border-radius: 8%;
-    color: rgba(255, 255, 255, 0.85);
-}
-.impact:hover{
-    background-color: hsla(126, 26%, 35%, 0.681);
-    cursor: pointer;
-}
-
-.full-text{
-    left: 48%;
-    position: absolute;
-    top: 300%;
-}
-.box3{
-
-    margin-left: -2%;
-}
-
-.more{
-    position: absolute;
-    padding-left: 5px;
-    top: 83%;
-    left: 40%;
-    margin-top: 60px;
-    font-size: 30px;
-    text-align: left;
-    color: rgba(0, 0, 0, 0.85);
-    font-weight: bold;
-    border-radius: 50px; 
-    line-height: 40px;
-    transition: background-color 0.15s;
-}
-
-.box4{
-    position: absolute;
-    top: 10%;
-    left: 8%;
-    border-radius: 100%;
-    opacity: 100%;
-    animation-name: slideRight;
-    animation-duration: 2s;
-    z-index: 10;
-    box-shadow: 0 0 100px rgba(163, 235, 178, 0.8);
-    img{
-        border-radius: 2%;
-        width:500px;
-        height:400px;
-    }
-}
-
-.box4:hover{
-    box-shadow: 0 0 100px rgba(163, 235, 178, 6);
-}
-
-.box5{
-    position: absolute;
-    top: 10%;
-    left: 52%;
-    border-radius: 100%;
-    opacity: 100%;
-    box-shadow: 0 0 100px rgba(163, 235, 178, 0.8);
-    animation-name: slideLeft;
-    animation-duration: 2s;
-    z-index: 10;
- img{
-    border-radius: 2%;
-}}
-
-.box5:hover{
-    box-shadow: 0 0 100px rgba(163, 235, 178, 6);
-}
-
-.box4Desc{
-    position: absolute;
-    top: 50%;
-    left: 22%;
-    border-radius: 100%;
-    opacity: 100%;
-    text-shadow: 2px 2px #439a0d;
-    color: rgba(255, 255, 255, 0.85);
-    font-weight: bold;
-    font-size: 20px;
-    transition: font-size 0.15s;
-    animation-name: slideRight;
-    animation-duration: 2s;
-    z-index: 20;
-}
-
-.box4Desc:hover{
-    font-size: 25px;
-    cursor: pointer;
-
-}
-
-.box5Desc{
-    position: absolute;
-    top: 50%;
-    left: 62%;
-    border-radius: 100%;
-    opacity: 100%;
-    text-shadow: 2px 2px #439a0d;
-    color: rgba(255, 255, 255, 0.85);
-    font-weight: bold;
-    font-size: 20px;
-    transition: font-size 0.15s;
-    animation-name: slideLeft;
-    animation-duration: 2s;
-    z-index: 20;
-}
-
-.box5Desc:hover{
-    font-size: 25px;
-    cursor: pointer;
-}
-
-
-.box6{
-    width: 1500px;
-    height: 100px;
-    background-color: hsl(127, 25%, 26%);
-    position: absolute;
-    top: 200%;
-    margin-top: -8px;
-    margin-left: -8px;
-}
-
-.wrapBox{
-
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 100%;
-    left: 4%;
-    padding-right: 600px;
-    padding-bottom: 400px;
-    padding-left: 700px;
-    padding-top: 400px;
-    border-radius: 10%;
-    z-index: -1;
-    margin-right: 20px;
-    margin-left: 20px;
-
-}
-
-
-</style>
-
 <body>
-    <header>
-        <div class="link-to-home">
-            <a href="index.html"><img src = "imgs/3D.png" alt = "Little green boy logo. Chance Igual (hello) Academia Inglesa."
-                width="240" height="95"></a>
-        </div>
-        <h1 class= "main-title1">There is no limit <br />
-            to learning </h1>
-        <h2 class="main-desc"> Chance Igual expands horizons through <br />
-            the democratization of education </h2>
+  
+    <div class="link-to-home">
+            <a href="index.html">
+            <img src = "imgs/3D.png" alt = "Little green boy logo. Chance Igual (hello) Academia Inglesa."></a>
+    </div>
 
-    </header>
-    <div class = "box" ></div>
-    <div class = "box2"></div>
+    <h1 class= "main-title1">There is no limit <br />
+            to learning 
+    </h1>
+
+    <h2 class="main-desc"> Chance Igual expands horizons through <br />
+            the democratization of education 
+    </h2>
+
+    <div class = "box" >
+    </div>
+
+    <div class = "box2">
+    </div>
+
     <div class = "box3">
         <img src = "imgs/pic4.jpg" alt = "Image from bottom looking uo at trees."
         width="1510" height="500">
     </div>
+
+    <div class="bottom-box">
+    </div>
+    
+    <div class="last-box">
+        <hr> 
+    </div>
+    
+
     <div class="full-text"> 
 
-        <h2 class= "description">Free online English school</h2>
-        <h3 class="about-us"> Our mission </h3>
         <p class = "us-parag">
             Providing free language classes, Chance Igual wishes to help build a future generation 
             of adults who are passionate for learning and exporing other languages and cultures.
             Founded in 2021, Chance Igual is an organization dedicated to promoting free, accessible education
             for children and teenagers in underrepresented regions across Brazil. Its mission is to bridge 
             educational gaps by offering online classes, ensuring that even those in remote or underserved communities
-            have the opportunity to learn and grow. Focusing primarily on language education, Chance Igual offers a 
+            have the opportunity to learn and grow. <br />
+            <br />
+            <br />
+            Focusing primarily on language education, Chance Igual offers a 
             range of free language courses designed to ignite a passion for learning among young people. The organization 
             believes that mastering new languages not only opens doors to diverse cultures but also helps foster global awareness and 
             a broader worldview. By empowering the next generation with linguistic skills and cultural understanding, Chance Igual
@@ -448,37 +62,38 @@ button{
             tool for breaking down barriers, promoting equality, and unlocking potential.
             Everyone deserves a Chance Igual!
         </p>
-
-        <h4 class="sign-up-text">Sign up for virtual classes today!</h4>
-
-        <button class="to-form">Go to form</button>
-        <button class="contact">Contact us</button>
-        <h4 class="my_logo"> <img src = "imgs/Chance.png" alt = "Little green boy logo. Chance Igual (hello) Academia Inglesa."
-            width="90" height="90"> </h4>
     </div>
-    <div class = "more" > Learn more with us </div>
-
-    <div class="wrapBox">
-
-        <div class = "box4Desc"> Sign up to learn</div>
-
-        <div class = "box5Desc">Volunteer to be a tutor</div>
-
-        <div class = "box4">  <img src = "imgs/pic3.jpg" alt = "Image from bottom looking uo at trees." > </div>
-        
-        <div class = "box5">  <img src = "imgs/pic5.jpg" alt = "Image from bottom looking uo at trees." 
-            width="500" height="400"> </div>
-        
-        <div class= "backBox"></div>
-
-    </div>
-
-    <div class = "box6"> </div>
+    <h2 class= "description">Free online English school
+    </h2>
+    <h4 class="sign-up-text">“The future depends on what we do in the present.”<br /> - Mahatma Gandhi </h4>
+    <div class = "more" > About us </div>
 
     <button class="home"> Home </button>
     <button class="contactTop"> Contact </button>
     <button class="impact">Impact </button>
     <button class="sign-up"> Sign Up </button>
+
+    <!-- FORM FOR SIGN UP -->
+    <div class = "contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title"> 
+                <hr> 
+                <h2 class = "sign">Sign Up</h2>
+            </div>
+            <input type="hidden" name="access_key" value="571c88b9-dedc-44e4-a0a9-feb85ae23b80">
+            <input type="text" name = "name" placeholder="Your name" class = "contact-inputs">
+            <input type="email" name = "email" placeholder="Your email" class = "contact-inputs">
+            <textarea name = "message" placeholder = "Your message" class = "contact-inputs"></textarea>
+            <button type = "submit">Submit <img src="assets/arrow_icon.png" alt=""></button>
+        </form>
+        <div class ="contact-right">
+        </div>
+    </div>
+
+    <h4 class="my_logo"> <img src = "imgs/Chance.png" alt = "Little green boy logo. Chance Igual (hello) Academia Inglesa."
+        width="115" height="90"> </h4> 
+    <div class = "down-info"> Every child deserves a Chance Igual! </div>
+        
     </main>
 </body>
 </html>
